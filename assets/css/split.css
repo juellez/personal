@@ -200,7 +200,7 @@ body.page-template-page-fullsingle-split {
     margin-bottom: 20px;
     font-size: 18px;}
   .split-bio a {
-    color: #848d96;
+    color: #6b9081;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
@@ -227,7 +227,7 @@ body.page-template-page-fullsingle-split {
     margin-top: 40px;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     width: 100%; }
   body.page-template-page-fullsingle-split
   .split-lists .split-list.full-width p {
@@ -243,25 +243,26 @@ body.page-template-page-fullsingle-split {
   }
   .split-lists .split-list h3 {
     font-family: Montserrat, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 11px;
-    line-height: 11px;
-    margin-bottom: 31px;
-    color: #6b9081;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 30px;
+    color: #b3f1d8;
     letter-spacing: 2px; }
   .split-lists .split-list ul li {
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 12px; }
   .split-lists .split-list.full-width ul li {
-    font-size: 12px;
+    font-size: 14px;
     list-style-type: circle;
     margin-left: 16px;  }
     .split-lists .split-list ul li a {
       color: #6b9081;
       -webkit-transition-duration: 0.5s;
               transition-duration: 0.5s; }
+      .split-lists .split-list.full-width ul li a:hover,
       .split-lists .split-list ul li a:hover {
         color: #b3f1d8;
         -webkit-transition-duration: 0.1s;
@@ -269,6 +270,9 @@ body.page-template-page-fullsingle-split {
   .split-lists .split-list.full-width ul.cv li {
     list-style-type: none;
   }
+    .split-lists .split-list.full-width ul li a {
+      color: #69f7f3;
+    }
     .split-lists .split-list.full-width ul.cv li .fas {
       list-style-type: none;
       margin-left: -22px;
@@ -283,11 +287,13 @@ body.page-template-page-fullsingle-split {
     line-height: 0px;
     letter-spacing: 4px; }
   .split-credit p {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 12px;
     line-height: 14px; }
     .split-credit p a {
-      color: #CA486d; }
+      color: #69f7f3; }
+    .split-credit p a:hover {
+      color: #f34577; }
 
 .split-video {
   overflow: hidden;
