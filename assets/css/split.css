@@ -109,7 +109,7 @@ html {
 body.page-template-page-fullsingle-split {
   background-color: #0f1429;
   font-family: 'Alice', serif;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 33px;
   letter-spacing: -0.2px;
   color: #b8d0cc;
@@ -134,17 +134,17 @@ body.page-template-page-fullsingle-split {
               flex-wrap: wrap; } }
   .fs-split .split-image {
     position: relative;
-    width: 46%;
+    width: 40%;
     height: 100vh;
-    background-image: url("../../images/jewel-crop-color-sm.jpg");
+    background-image: url("../../images/jewel-crop-color-sm2.jpg");
     background-position: center center;
     background-size: cover; }
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       .fs-split .split-image {
         height: 80vh;
         width: 100%; } }
   .fs-split .split-content {
-    width: 54%;
+    width: 59%;
     min-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -162,7 +162,7 @@ body.page-template-page-fullsingle-split {
         height: auto; } }
     .fs-split .split-content .split-content-vertically-center {
       padding: 80px 80px 20px 80px;
-      max-width: 686px;
+      max-width: 800px;
       margin-top: auto;
       margin-bottom: auto; }
       @media (max-width: 1200px) {
@@ -172,8 +172,8 @@ body.page-template-page-fullsingle-split {
         .fs-split .split-content .split-content-vertically-center {
           padding: 40px; } }
 
-.split-intro {
-  font-size: 64px;
+.split-intro .tagline {
+  font-size: 60px;
   line-height: 80px;
   letter-spacing: -2px; }
   .split-intro h1 {
@@ -182,11 +182,15 @@ body.page-template-page-fullsingle-split {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-bottom: 40px;
     letter-spacing: 0.4px;
-    color: #f2f0ad; }
-  .split-intro .tagline {
+    color: #126e75; }
+  .split-intro .hilite {
     color: #fff; }
+  .split-intro ol {
+    list-style: lower-roman;
+  }
 
 .split-bio {
   padding: 40px 0 40px 0;
@@ -300,9 +304,9 @@ body.page-template-page-fullsingle-split {
     margin-bottom: 12px;
     line-height: 14px; }
     .split-credit.small p { font-size: 11px; }
-    .split-credit p a {
+    .split-credit p a, .split-lists.cv a {
       color: #69f7f3; }
-    .split-credit p a:hover {
+    .split-credit p a:hover, .split-lists.cv a:hover {
       color: #f34577; }
 
 .split-video {
