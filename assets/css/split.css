@@ -30,6 +30,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+sup { vertical-align: super; line-height: 100%; font-size: 50%; text-transform: uppercase; font-family: Montserrat; font-weight: lighter; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -109,7 +110,7 @@ html {
 body.page-template-page-fullsingle-split {
   background-color: #0f1429;
   font-family: 'Alice', serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 33px;
   letter-spacing: -0.2px;
   color: #b8d0cc;
@@ -118,7 +119,7 @@ body.page-template-page-fullsingle-split {
   body.page-template-page-fullsingle-split p {
     color: #b8d0cc; }
 
-.amp,.asterisk { font-family: Alice, serif; font-weight: normal; }
+.amp,.asterisk { font-family: Alice, serif; font-weight: normal; display: inline;}
 .hilite { color: #fff; }
 
 .fs-split {
@@ -130,13 +131,19 @@ body.page-template-page-fullsingle-split {
   @media (max-width: 800px) {
     .fs-split {
       height: auto;
-      -webkit-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap; 
               flex-wrap: wrap; } }
   .fs-split .split-image {
     position: relative;
     width: 40%;
     height: 100vh;
-    background-image: url("../../images/jewel-crop-color-sm2.jpg");
+    background-image: url("../../images/jewels-2022-vert.jpg");
+
+    /* jewel-headshot-bw */
+    /* jewels-2022-grey-meditation.jpeg */
+    /* jewels-2022-vert.jpg */
+    /* jewel-crop-color-sm2.jpg */
+
     background-position: center center;
     background-size: cover; }
     @media (max-width: 600px) {
@@ -174,12 +181,14 @@ body.page-template-page-fullsingle-split {
 
 .split-intro .tagline {
   font-size: 60px;
-  line-height: 80px;
+  line-height: 32px;
   letter-spacing: -2px; }
+  .split-intro .dropcap {
+    margin-left: -46px;
+  }
   .split-intro h1 {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
     font-size: 16px;
     line-height: 16px;
     margin-top: -20px;
@@ -243,9 +252,8 @@ body.page-template-page-fullsingle-split {
   font-size: 80%;}
 
   .split-lists .split-list .asterisk {
-    padding-left: 4px;
-    font-size: 28px;
-    line-height: 8px;
+    vertical-align: super;
+    line-height: 100%;
   }
   .split-lists .split-list h3 {
     font-family: Montserrat, sans-serif;
@@ -294,19 +302,14 @@ body.page-template-page-fullsingle-split {
 
 .split-credit {
   opacity: 0.8; }
-  .split-credit .asterisk {
-    margin-left: -14px;
-    font-size: 18px;
-    line-height: 0px;
-    letter-spacing: 4px; }
   .split-credit p {
     font-size: 13px;
     margin-bottom: 12px;
     line-height: 14px; }
     .split-credit.small p { font-size: 11px; }
-    .split-credit p a, .split-lists.cv a {
+    .split-credit p a, .split-lists.cv a, .split-intro a {
       color: #69f7f3; }
-    .split-credit p a:hover, .split-lists.cv a:hover {
+    .split-credit p a:hover, .split-lists.cv a:hover, .split-intro a:hover {
       color: #f34577; }
 
 .split-video {
