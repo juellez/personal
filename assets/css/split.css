@@ -238,6 +238,9 @@ body.page-template-page-fullsingle-split {
   @media (max-width: 500px) {
     .split-lists .split-list {
       width: 90%; } }
+.split-lists .split-list.double {
+  width: 50%;
+}
 .split-lists .split-list.last {
   margin-right: 0; 
   width: 45%; }  
