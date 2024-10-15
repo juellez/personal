@@ -82,7 +82,7 @@ img.aligncenter {
   margin-left: auto; }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #0f1012;
   border-style: none; }
 
 body,
@@ -113,10 +113,10 @@ em { font-style: oblique; }
     opacity: 1; } }
 
 html {
-  background-color: #0f1429; }
+  background-color: #0f1012; }
 
 body.page-template-page-fullsingle-split {
-  background-color: #0f1429;
+  background-color: #0f1012;
   font-family: Alice, Fraunces, serif;
   font-size: 18px;
   line-height: 32px; /*33*/
@@ -151,6 +151,7 @@ body.page-template-page-fullsingle-split em {
     height: 100vh;
     background-image: url("../../images/jewels-2024-vert.jpg");
 
+    /* jewels-2024-vert.jpg | IMG_4703.jpg */
     /* jewel-headshot-bw */
     /* jewels-2022-grey-meditation.jpeg */
     /* jewels-2022-vert.jpg */
@@ -160,7 +161,13 @@ body.page-template-page-fullsingle-split em {
     background-size: cover; }
     @media (max-width: 600px) {
       .fs-split .split-image {
-        height: 80vh;
+        height: 50vh;
+        background-position: center 25%;
+        width: 100%; } }
+    @media (max-width: 800px) {
+      .fs-split .split-image {
+        height: 56vh;
+        background-position: center 23%;
         width: 100%; } }
   .fs-split .split-content {
     width: 59%;
@@ -168,6 +175,8 @@ body.page-template-page-fullsingle-split em {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
+    padding-bottom: 0;
+    background-color: #0f1012;
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center;
@@ -175,21 +184,27 @@ body.page-template-page-fullsingle-split em {
     -webkit-justify-content: center;
             justify-content: center;
     overflow: auto; }
+    @media (max-width: 600px) {
+      .fs-split .split-content {
+        margin-top: -80px;
+        z-index: 99;
+        width: 100%;
+        height: auto; } }
     @media (max-width: 800px) {
       .fs-split .split-content {
         width: 100%;
         height: auto; } }
     .fs-split .split-content .split-content-vertically-center {
-      padding: 80px 80px 20px 80px;
+      padding: 1em 4em 2em 5em;
       max-width: 800px;
       margin-top: auto;
       margin-bottom: auto; }
       @media (max-width: 1200px) {
         .fs-split .split-content .split-content-vertically-center {
-          padding: 60px 60px 20px 60px; } }
+          padding: 1em 3em 2em 5em; } }
       @media (max-width: 800px) {
         .fs-split .split-content .split-content-vertically-center {
-          padding: 40px; } }
+          padding: 0 40px 6em 60px; } }
 
 .split-bio .tagline,
 .split-intro .tagline {
@@ -219,7 +234,7 @@ body.page-template-page-fullsingle-split em {
   }
 
 .split-bio {
-  padding: 40px 0 20px 0; }
+  padding: 40px 0 12px 0; }
   @media (max-width: 1200px) {
     .split-bio {
       padding: 30px 0 10px 0; } }
@@ -231,7 +246,7 @@ body.page-template-page-fullsingle-split em {
     line-height: 26px;
     font-size: 16px;}
   .split-bio a {
-    color: #6b9081;
+    color: #60bcb8;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
@@ -248,7 +263,7 @@ body.page-template-page-fullsingle-split em {
   padding-left: 0; 
   padding-right: 0;
   display: inline-block;
-  margin-bottom: 40px; }
+  margin-bottom: 36px; }
   @media (max-width: 500px) {
     .split-lists .split-list {
       width: 90%; } }
@@ -286,7 +301,7 @@ body.page-template-page-fullsingle-split em {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     color: #b3f1d8;
     letter-spacing: 2px; }
   .split-lists .split-list ul li {
@@ -303,7 +318,7 @@ body.page-template-page-fullsingle-split em {
       margin-bottom: 10px; 
     }
     .split-lists .split-list ul li a {
-      color: #6b9081;
+      color: #60bcb8;
       -webkit-transition-duration: 0.5s;
               transition-duration: 0.5s; }
       .split-lists .split-list.full-width ul li a:hover,
@@ -326,7 +341,13 @@ body.page-template-page-fullsingle-split em {
 .split-lists.cv { display: none; margin-top: 80px; }
 
 .split-credit {
-  opacity: 0.8; }
+  opacity: 0.8; 
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #000;
+  width: 100%;
+  padding: .5em .5em .5em .5em; }
   .split-credit p {
     font-size: 15px;
     margin-bottom: 12px;
