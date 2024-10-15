@@ -149,7 +149,7 @@ body.page-template-page-fullsingle-split em {
     position: relative;
     width: 40%;
     height: 100vh;
-    background-image: url("../../images/jewels-2022-vert.jpg");
+    background-image: url("../../images/jewels-2024-vert.jpg");
 
     /* jewel-headshot-bw */
     /* jewels-2022-grey-meditation.jpeg */
@@ -193,8 +193,8 @@ body.page-template-page-fullsingle-split em {
 
 .split-bio .tagline,
 .split-intro .tagline {
-  font-size: 58px;
-  line-height: 32px;
+  font-size: 46px;
+  line-height: 24px;
   letter-spacing: -2px; }
   .split-bio .dropcap,
   .split-intro .dropcap {
@@ -328,9 +328,9 @@ body.page-template-page-fullsingle-split em {
 .split-credit {
   opacity: 0.8; }
   .split-credit p {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 12px;
-    line-height: 14px; }
+    line-height: 16px; }
     .split-credit.small p { font-size: 11px; }
     .split-credit p a, .split-lists.cv a, .split-intro a {
       color: #69f7f3; }
