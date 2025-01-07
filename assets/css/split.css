@@ -82,7 +82,7 @@ img.aligncenter {
   margin-left: auto; }
 
 body {
-  background-color: #0f1012;
+  background-color: #1c5250; /*#0f1012;*/
   border-style: none; }
 
 body,
@@ -113,10 +113,10 @@ em { font-style: oblique; }
     opacity: 1; } }
 
 html {
-  background-color: #0f1012; }
+  background-color: #1c5250; }
 
 body.page-template-page-fullsingle-split {
-  background-color: #0f1012;
+  background-color: #1c5250;
   font-family: Alice, Fraunces, serif;
   font-size: 18px;
   line-height: 32px; /*33*/
@@ -149,7 +149,7 @@ body.page-template-page-fullsingle-split em {
     position: relative;
     width: 40%;
     height: 100vh;
-    background-image: url("../../images/jewels-2024-vert.jpg");
+    background-image: url("../../images/retouched_IMG_4692.jpg");
 
     /* jewels-2024-vert.jpg | IMG_4703.jpg */
     /* jewel-headshot-bw */
@@ -176,7 +176,7 @@ body.page-template-page-fullsingle-split em {
     display: -webkit-flex;
     display: flex;
     padding-bottom: 0;
-    background-color: #0f1012;
+    background-color: #1c5250;
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center;
@@ -350,7 +350,6 @@ body.page-template-page-fullsingle-split em {
   padding: .5em .5em .5em .5em; }
   .split-credit p {
     font-size: 15px;
-    margin-bottom: 12px;
     line-height: 16px; }
     .split-credit.small p { font-size: 11px; }
     .split-credit p a, .split-lists.cv a, .split-intro a {
