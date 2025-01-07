@@ -38,7 +38,9 @@ time, mark, audio, video {
     "WONK" 0;
 }
 .cite { font-size: 90%; text-align: left; }
-sup { vertical-align: super; line-height: 100%; font-size: 50%; text-transform: uppercase; font-family: Montserrat; font-weight: lighter; }
+sup { vertical-align: super; line-height: 80%; font-size: 100%; text-transform: uppercase; font-style: normal; font-family: Alice, Fraunces, serif; font-weight: lighter; }
+sup.footnote { vertical-align: baseline; line-height: 100%; font-size: 100%; }
+p.footnote { font-size: 14px !important; font-family: 'Montserrat'; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -211,13 +213,40 @@ body.page-template-page-fullsingle-split em {
   font-size: 46px;
   line-height: 24px;
   letter-spacing: -2px; }
+.split-bio h2.tagline {
+  margin-bottom: 2em;
+  line-height: 100%;
+}
+.split-intro h2.tagline {
+    font-size: 18px;
+    margin-top: 0;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.split-intro p {
+  font-size: 16px; line-height: 18px;
+}
   .split-bio .dropcap,
   .split-intro .dropcap {
     margin-left: -46px;
     font-style: normal;
     text-transform: lowercase;
   }
-  .split-bio h1,
+  .split-bio .intro {
+    margin-left: -46px; 
+    margin-bottom: 2em;
+  }
+  .split-bio h1 {
+    line-height: normal;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #b3f1d8;
+    margin-top: 3em;
+  }
   .split-intro h1 {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
@@ -226,7 +255,8 @@ body.page-template-page-fullsingle-split em {
     margin-top: -20px;
     margin-bottom: 40px;
     letter-spacing: 0.4px;
-    color: #126e75; }
+    color: #126e75; 
+  }
   .split-intro .hilite {
     color: #fff; }
   .split-intro ol {
@@ -234,7 +264,7 @@ body.page-template-page-fullsingle-split em {
   }
 
 .split-bio {
-  padding: 40px 0 12px 0; }
+  padding: 0px 0 12px 0; }
   @media (max-width: 1200px) {
     .split-bio {
       padding: 30px 0 10px 0; } }
