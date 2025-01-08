@@ -40,7 +40,8 @@ time, mark, audio, video {
 .cite { font-size: 90%; text-align: left; }
 sup { vertical-align: super; line-height: 80%; font-size: 100%; text-transform: uppercase; font-style: normal; font-family: Alice, Fraunces, serif; font-weight: lighter; }
 sup.footnote { vertical-align: baseline; line-height: 100%; font-size: 100%; }
-p.footnote { font-size: 14px !important; font-family: 'Montserrat'; }
+p.footnote { font-size: 12px !important; font-family: 'Montserrat'; }
+p.footnote .amp, h1 .amp { font-size:16px; font-weight: lighter; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -151,7 +152,7 @@ body.page-template-page-fullsingle-split em {
     position: relative;
     width: 40%;
     height: 100vh;
-    background-image: url("../../images/retouched_IMG_4692.jpg");
+    background-image: url("../../images/jm_IMG_5976_office.JPG"); /*retouched_IMG_4692.jpg"); */
 
     /* jewels-2024-vert.jpg | IMG_4703.jpg */
     /* jewel-headshot-bw */
@@ -208,13 +209,29 @@ body.page-template-page-fullsingle-split em {
         .fs-split .split-content .split-content-vertically-center {
           padding: 0 40px 6em 60px; } }
 
+.split-lists .split-list ul li.button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.split-lists li.button a {
+  border: solid 1px #60bcb8;
+  padding: .5em;
+}
+.split-lists li.button a:hover {
+  background-color: #b3f1d8;
+  color: #1c5250!important;
+}
+.split-lists li a .fa {
+  padding: 0 8px 2px 8px;
+}
+
 .split-bio .tagline,
 .split-intro .tagline {
   font-size: 46px;
   line-height: 24px;
   letter-spacing: -2px; }
 .split-bio h2.tagline {
-  margin-bottom: 2em;
+  margin-bottom: .5em;
   line-height: 100%;
 }
 .split-intro h2.tagline {
