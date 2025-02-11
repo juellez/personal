@@ -152,7 +152,7 @@ body.page-template-page-fullsingle-split em {
     position: relative;
     width: 40%;
     height: 100vh;
-    background-image: url("../../images/jm_IMG_5976_office.jpg"); /*retouched_IMG_4692.jpg"); */
+    background-image: url("../../images/jm_IMG_5975.jpg"); /*jm_IMG_5976_office.jpg"); /*retouched_IMG_4692.jpg"); */
 
     /* jewels-2024-vert.jpg | IMG_4703.jpg */
     /* jewel-headshot-bw */
@@ -385,7 +385,7 @@ body.page-template-page-fullsingle-split em {
       margin-right: 6px;
     }
 
-.split-lists.cv { display: none; margin-top: 80px; }
+.split-lists.cv { /*display: none;*/ margin-top: 80px; }
 
 .split-credit {
   opacity: 0.8; 
