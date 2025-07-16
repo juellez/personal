@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:jewel mlnarik
+N;CHARSET=UTF-8:mlnarik;jewel;;;
+NICKNAME;CHARSET=UTF-8:jewels
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:jewel@mlnarik.com
+TEL;TYPE=CELL:503-819-3767
+TEL;TYPE=WORK,VOICE:479-222-0248
+LABEL;CHARSET=UTF-8;TYPE=WORK:Soul Song Sanctuary
+ADR;CHARSET=UTF-8;TYPE=WORK:;;178c W Van Buren;Eureka Springs;AR;72632;
+TITLE;CHARSET=UTF-8:Presence & Performance Coach for Entrepreneurial Leaders
+ROLE;CHARSET=UTF-8:Founder
+ORG;CHARSET=UTF-8:Unstruck Somatics & Soul Song Sanctuary
+URL;type=WORK;CHARSET=UTF-8:https://jewel.mlnarik.com
+X-SOCIALPROFILE;TYPE=facebook:https://www.facebook.com/jewel.mlnarik
+X-SOCIALPROFILE;TYPE=linkedin:http://www.linkedin.com/in/jewelmlnarik
+X-SOCIALPROFILE;TYPE=instagram:http://instagram.com/juellez
+X-SOCIALPROFILE;TYPE=Substack:https://unstrucksoundbites.substack.com
+REV:2025-07-16T14:37:02.075Z
+END:VCARD

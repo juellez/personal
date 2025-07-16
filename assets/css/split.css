@@ -209,15 +209,17 @@ body.page-template-page-fullsingle-split em {
         .fs-split .split-content .split-content-vertically-center {
           padding: 0 40px 6em 60px; } }
 
-.split-lists .split-list ul li.button {
+.split-lists .split-list ul li.button{
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-.split-lists li.button a {
+.split-lists li.button a,
+.split-bio a.button {
   border: solid 1px #60bcb8;
   padding: .5em;
 }
-.split-lists li.button a:hover {
+.split-lists li.button a:hover,
+.split-bio a.button:hover {
   background-color: #b3f1d8;
   color: #1c5250!important;
 }
