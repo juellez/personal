@@ -62,13 +62,218 @@ o  | |                     /                               |  o                 
 	<link rel='stylesheet' href='assets/css/split.min.css?v=26' type='text/css' media='screen' />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<style>
-	body#fullsingle{background:url('images/fw-jewelm-leftgold1.jpg') center center/cover no-repeat fixed #b98d5c;margin:0;padding:0}.full-width-container{display:flex;justify-content:flex-end;min-height:100vh;box-sizing:border-box}.content-overlay-card{width:100%;max-width:54%;background:rgba(255,255,255,.94);box-sizing:border-box;min-height:100vh;box-shadow:-5px 0 25px rgba(0,0,0,.15);overflow-y:auto;padding:20px}.content-overlay-card .split-content{width:100%!important;float:none!important;padding:40px 30px!important;background:0 0!important;box-sizing:border-box}.cv{margin-top:30px;padding-top:20px;border-top:1px dashed #b98d5c}.split-lists .split-list h2,.split-lists .split-list h3,.split-lists.cv p b{font-family:Montserrat,sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:2px;color:#1c5250b5}.split-lists .split-list h2{font-size:14px}.split-bio p.footnote{line-height:1.1}.split-bio p.footnote b{font-weight:700}.split-bio h2.tagline{color:#1c5250}body.page-template-page-fullsingle-split,body.page-template-page-fullsingle-split p{color:#1c5250b5}.split-bio h1,.split-intro .hilite,.split-lists .split-list h2{color:#b15b14}.btn,.split-bio a,.split-credit p a,.split-intro a,.split-lists .split-list.full-width ul li a,.split-lists.cv a{color:#60bcb8}body.page-template-page-fullsingle-split .split-credit p{color:rgba(255,255,255,.8);font-family:Montserrat,sans-serif;font-size:.8rem}.split-bio a:hover,.split-credit p a:hover,.split-intro a:hover,.split-lists .split-list ul li a:hover,.split-lists .split-list.full-width ul li a:hover,.split-lists.cv a:hover{color:#b15b14;border-bottom:1px dotted #ca486d}.btn{border:1px solid #60bcb8}.btn:hover,.split-lists.cv a.btn:hover{color:#b15b14;border:1px solid #b15b14;border-bottom:1px solid #b15b14}.split-bio p em,.split-lists .split-list.full-width ul li em{font-weight:400}@media (max-width:1120px){.content-overlay-card{max-width:600px}@media (max-width:880px){body#fullsingle{background-position:30% center}.full-width-container{justify-content:center}.content-overlay-card{max-width:500px;background:rgba(255,255,255,.97);opacity:.9;margin-top:20vh;padding:0 1rem 1rem;margin-right:0;margin-left:auto}.content-overlay-card .split-content{padding:0 .4rem 1rem .6rem!important}.split-bio{padding:0 0 2rem!important}.split-bio .tagline,.split-intro .tagline{font-size:40px}.split-bio h1 span.parens{font-size:90%;letter-spacing:.4px}}@media (max-width:800px){.content-overlay-card{max-width:420px}.split-bio .tagline,.split-intro .tagline{font-size:34px}}@media (max-width:680px){body#fullsingle{background-image:url('images/fw-jewelm-leftgold1.jpg');background-position:center top -60px;background-size:contain;background-attachment:scroll;background-color:#b15b14}.content-overlay-card{max-width:100%;margin-top:240px}.split-bio .tagline,.split-intro .tagline{font-size:40px}}}
+		body.page-template-page-fullsingle-split,
+		body#fullsingle {
+			background-color: #b15b14!important;
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+		body#fullsingle::before {
+		    content: "";
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100vh;
+		    background: url('images/fw-jewelm-leftgold1.jpg') no-repeat center center;
+		    background-size: cover;
+				 background-color: #b15b14!important;
+		}
 
-	img.wordmark {
-    	width: 200px;
-	    float: right;
-	    margin-top: 1rem;
-	}
+		img.wordmark {
+			width: 200px;
+		    float: right;
+		    margin-top: 1rem;
+		}
+
+		.full-width-container {
+			display: flex;
+			justify-content: flex-end;
+			min-height: 100vh;
+			box-sizing: border-box;
+			position: relative; 
+			z-index: 100;
+		}
+
+		.content-overlay-card {
+			width: 100%;
+			max-width: 54%; 
+			background: rgba(255, 255, 255, 0.94); /* Smooth backdrop tint */
+			box-sizing: border-box;
+			min-height: 100vh;
+			box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+			overflow-y: auto;
+			padding: 20px;
+		}
+
+		.content-overlay-card .split-content {
+			width: 100% !important;
+			float: none !important;
+			padding: 40px 30px !important;
+			background: transparent !important;
+			box-sizing: border-box;
+		}
+
+		/* CV */
+		.cv {
+			margin-top: 30px;
+			padding-top: 20px;
+			border-top: 1px dashed #b98d5c;
+		}
+
+		.split-lists.cv p b,
+		.split-lists .split-list h2,
+		.split-lists .split-list h3 {
+		    font-family: Montserrat, sans-serif;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		    letter-spacing: 2px;
+		    color: #1c5250b5; 
+		}
+		.split-lists .split-list h2{
+			font-size: 14px;
+		}
+		.split-bio p.footnote { line-height:1.1; }
+		.split-bio p.footnote b { font-weight: bold; }
+
+		/* Colors */
+		.split-bio h2.tagline {
+		  color:#1c5250;
+		}
+
+		body.page-template-page-fullsingle-split,
+		body.page-template-page-fullsingle-split p {
+		    color: #1c5250b5;
+		}
+
+		.split-intro .hilite,
+		.split-lists .split-list h2,
+		.split-bio h1 {
+		    color: #b15b14;
+		}		
+
+		body.page-template-page-fullsingle-split
+		.split-credit p { 
+			color: rgba(255,255,255,.8); 
+			font-family: 'Montserrat', sans-serif;
+		    font-size: .8rem;
+		}
+
+		.split-lists .split-list.full-width ul li a,
+		.split-credit p a, .split-lists.cv a, .split-intro a,
+		.split-bio a {
+		    color: #60bcb8;
+		}
+
+		.split-lists .split-list.full-width ul li a:hover,
+		.split-lists .split-list ul li a:hover,
+		.split-lists.cv a:hover,
+		.split-credit p a:hover,
+		.split-intro a:hover,
+		.split-bio a:hover {
+		    color: #b15b14;
+		    border-bottom: 1px dotted #CA486d;
+		}
+
+		.btn {
+		    color: #60bcb8;
+		    border: 1px solid #60bcb8;
+		}
+		.split-lists.cv a.btn:hover,
+		.btn:hover {
+		    color: #b15b14;
+		    border: 1px solid #b15b14;	
+		    border-bottom: 1px solid #b15b14;	
+		}
+
+		.split-bio p em,
+		.split-lists .split-list.full-width ul li em {
+			font-weight: 400;
+		}
+
+
+		/* Mobile */
+		@media (max-width: 1120px) {
+			.content-overlay-card {
+				max-width: 600px;
+			}
+		}
+		@media (max-width: 880px) {
+			body#fullsingle::before {
+				background-position: 30% center; 
+			}
+			.full-width-container {
+				justify-content: center;
+			}
+			.content-overlay-card {
+				max-width: 500px;
+				background: rgba(255, 255, 255, 0.97);
+				opacity: .9;
+				margin-top: 20vh;
+				padding: 0 1rem 1rem 1rem;
+				margin-right: 0;
+				margin-left: auto;
+			}
+			.content-overlay-card .split-content {
+				padding: 0 .4rem 1rem .6rem!important;
+			}
+			.split-bio {
+				padding: 0 0 2rem 0!important;
+			}
+			.split-bio .tagline, .split-intro .tagline {
+			    font-size: 40px;
+			}
+			.split-bio h1 span.parens { font-size: 90%; letter-spacing:.4px; }
+
+		}
+		@media (max-width: 800px) {
+			.content-overlay-card {
+				max-width: 420px;
+			}
+			.split-bio .tagline, .split-intro .tagline {
+			    font-size: 34px;
+			}
+		}
+		@media (max-width: 680px) {
+			body#fullsingle::before {
+				background-position: left top -16vw;
+				background-size: calc(100%) auto;
+				position: absolute;
+			}
+			.content-overlay-card {
+				max-width: 100%;
+		      margin-top: 50vw;
+			}
+			.split-bio .tagline, .split-intro .tagline {
+			    font-size: 40px;
+			}
+
+			@media (orientation: landscape) {
+				h2.tagline {
+				    position: absolute;
+				    top: 0; bottom: 0;
+				    margin-top: 4rem;
+				    text-align: right;
+				    color: #fff!important;
+				    max-width: 56vw;
+				    right: 2rem;
+				}
+			    .content-overlay-card {
+			        /* On landscape phones, the card looks better pushed down slightly 
+			           so they can see the gold graphic before scrolling into text */
+			        margin-top: 80vh; 
+			    }
+			}
+		}
+		@media (max-width: 420px) {
+			body#fullsingle::before {
+				background-position: left top -21vw;
+				background-size: calc(100% + 100px) auto;
+			}
+		}
+
 	</style>
 </head>
 
@@ -87,21 +292,21 @@ o  | |                     /                               |  o                 
 					<p class="footnote">Certified <span class="amp">*</span><a href="https://www.unstrucksanctuary.com/healing/" target="_blank">Somatic Intuitive Healer.</a> 
 					Pronounced <nobr><b>"muhl-NAR-ick"</b></nobr>.</p>
 
-		 			<h2 class="tagline">somatic guide through transition, transformation & healing</h2>
+		 			<h2 class="tagline">somatic guide through transition, transformation <nobr>& healing</nobr></h2>
 
 					<p>As a business doula <span class="amp">&</span> transformational coach, 
 
 						<!-- <a class="scroll" href="#skills"> -->
 
-						I guide visionaries and their teams through the transitions that redefine us&mdash;career pivots, new ventures, reclamations & reinventions. These thresholds demand our <em>being</em>, beyond our <em>doing</em>.
-						That's why, after 25 years of leading strategy through change, I now work where true transformation begins:
+						I guide heart-led leaders and their teams through the transitions that redefine us&mdash;career pivots, new ventures, reclamations & reinventions. These thresholds demand our <em>being</em>, beyond our <em>doing</em>.
+						That's why, after decades of leading strategy through change, I now work where true transformation begins:
 						in the body, safe from over-thinking.
 
 						<br /><br />
 
 						When I'm not holding space for others, I love foraging my
 						way through the woods, playing with my puppy, making music, and crafting communal experiences.
-						If you'd like to collaborate or connect, please reach out!
+						If you'd like to collaborate or connect, please reach out!<br />
 
 						<img src="images/jewelmlnarik-mark/jewelmlnarik-black.png" alt="jewel mlnarik" class="wordmark" />
 
@@ -115,7 +320,7 @@ o  | |                     /                               |  o                 
 							<li><a target="_blank" href="https://unstrucksomatics.com">Executive & Transformational Coaching</a></li>
 							<li><a target="_blank" href="https://soulsongsanctuary.us/about">Personal & Spiritual Healing</a></li>
 							<li><a class="scroll" href="#speaking">Speaking & Workshops</a></li>
-							<li class="button"><a target="_blank" href="https://calendly.com/jewel/15-minutes">Curious? Let's Connect on a Call</a></li>
+							<li class="button"><a target="_blank" href="https://calendly.com/jewel/15-minutes">Say Hi</a></li>
 							<li>
 								<a href="http://www.linkedin.com/in/jewelmlnarik" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</li>
@@ -125,10 +330,10 @@ o  | |                     /                               |  o                 
 					<div class="split-list double last">
 						<h3>Listen & Read</h3>
 						<ul>
-							<li><a href="https://unstrucksoundbites.substack.com/" target="_blank">Unstruck Soundbites</a> <em>substack</em></li>
-							<li><a target="_blank" href="https://www.linkedin.com/newsletters/7299844173078183936/">Healed Leadership</a> <em>newsletter</em></li>
-							<li><a href="https://unstrucksound.com/" target="_blank">Unstruck Sound</a> <em>podcast</em></li>
-							<li>KÍmNEMÁ <em>music, new home soon</em></li>
+							<li><a href="https://unstrucksoundbites.substack.com/" target="_blank">Substack</a> <em>Unstruck Soundbites</em></li>
+							<li><a target="_blank" href="https://www.linkedin.com/newsletters/7299844173078183936/">Newsletter</a> <em>Healed Leadership</em></li>
+							<li><a href="https://unstrucksound.com/" target="_blank">Podcast</a> <em>Unstruck Sound</em></li>
+							<li><a href="https://kimnema.bandcamp.com" target="_blank">Bandcamp</a> <em>KÍmNEMÁ music</em></li>
 
 							<li>
 								<a href="http://instagram.com/juellez" target="_blank"><i class="fa fa-instagram first" aria-hidden="true"></i></a>
@@ -163,15 +368,13 @@ o  | |                     /                               |  o                 
 					<div class="split-list full-width">						
 						<h2>Speaking <span class="amp">&</span> Events CV</h2>
 
-						<p>I speak and facilitate at conferences, retreats, team offsites, and professional organizations. 
-						Sessions are experiential, leaving audiences with real-life practices they can use 
-						the same day&mdash;and a new relationship to what they've been trying to think their way through. <b>Current workshops:</b></p>
+						<p>I speak and facilitate at conferences, retreats, offsites, and anywhere leaders gather. Sessions are experiential, leaving audiences with real-life practices they can apply immediately&mdash;and a new relationship to what they've been trying to think their way through. <b>Current workshops:</b></p>
 
 						<ul>
-							<li>Over-Responsible: How to Quit the Leadership Habit That's Quietly Running You</li>
-<!-- For the one everyone counts on — the leader whose competence has become a cage of carrying it all. How over-responsibility lives in the body (not just the calendar), why delegation advice never sticks, and what it takes to put things down without dropping them. Walk away with: a practice for feeling the difference between holding and gripping, and permission your org chart can't give you. -->
-							<li>Embodied Entrepreneur's Guide to Marketing <span class="amp">&</span> Sales</li>
-							<li>Embodied Prosperity: Healing Financial Trauma</li>
+							<li>Retiring Over-Responsible&mdash;<em>Leading past the habit that looks like strength but feels like exhaustion: for leaders who refuse to burn out</em></li>
+							<li>Embodying the Art of the Ask&mdash;<em>Presence over perfection: a somatic workshop for boards and anyone who hates asking for money</em></li>
+							<li>An Over-Thinky's Path to Action&mdash;<em>Trust the calm confidence your body already knows: for recovering perfectionists</em></li>
+							<!-- <li>Embodying the Art of Pricing&mdash;<em>Separate what you charge from what you survived: for service based professionals wanting to earn more without compromise</em></li> -->
 						</ul>
 
 						<p>Now booking for 2026-27 &rarr; 
