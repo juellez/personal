@@ -10,11 +10,18 @@
     content="Jewel Mlnarik — operations, programs, and organizational transitions."
   >
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <style>
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Jost:wght@100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
     :root {
       --text: #222;
       --muted: #666;
       --rule: #d8d8d8;
+      /*--org: #667879;*/
+      --org: #3D745B;
       --max-width: 860px;
     }
 
@@ -30,10 +37,12 @@
       margin: 0;
       background: #fff;
       color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Jost, Helvetica, Arial, sans-serif;
+      font-weight: 400;
       line-height: 1.45;
       -webkit-font-smoothing: antialiased;
     }
+    .amp,.asterisk { font-family: Alice, serif; display: inline;}
 
     a {
       color: inherit;
@@ -73,7 +82,7 @@
     */
     .name-mark {
       display: block;
-      width: min(360px, 75vw);
+      width: min(240px, 50vw);
       height: auto;
     }
 
@@ -105,10 +114,11 @@
     }
 
     .capabilities {
+      font-family: Helvetica, Arial, sans-serif;
       margin: 0;
       font-size: .82rem;
       line-height: 1.6;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     /* ---------- Sections ---------- */
@@ -139,19 +149,26 @@
     }
 
     .role-title {
+      text-transform: uppercase;
       margin: 0;
-      font-size: 1.03rem;
+      font-size: 1.05rem;
       line-height: 1.3;
-      font-weight: 700;
+      font-weight: 400;
     }
 
     .organization {
+      color: var(--org);
       margin: .08rem 0 0;
       font-size: .94rem;
-      font-weight: 700;
+      font-weight: 600;
+    }
+
+    .org {
+      color: var(--org);
     }
 
     .meta {
+      font-family: Helvetica, Arial, sans-serif;
       margin: .1rem 0 .55rem;
       color: var(--muted);
       font-size: .82rem;
@@ -165,7 +182,13 @@
     li {
       margin: .32rem 0;
       padding-left: .15rem;
+      letter-spacing: -.2px;
     }
+
+    li strong {
+      font-weight: 600;
+    }
+
 
     /* ---------- Compact sections ---------- */
 
@@ -276,15 +299,13 @@
 
   <header class="resume-header">
 
-    <h1 class="name">Jewel Mlnarik</h1>
+    <!-- <h1 class="name">Jewel Mlnarik</h1> -->
 
-    <!-- Optional signature mark instead of the text H1:
     <img
       class="name-mark"
-      src="/images/jewelmlnarik-mark/jewelmlnarik-black.png"
+      src="../images/jewelmlnarik-mark/jewelmlnarik-black.png"
       alt="Jewel Mlnarik"
     >
-    -->
 
     <p class="tagline">Operations · Programs · Transitions</p>
 
@@ -305,257 +326,277 @@
     </p>
 
     <p class="profile">
-      Operations &amp; program leader with 25+ years working across the full
+      Operations <span class="amp">&amp;</span> program leader with 25+ years working across the full
       lifecycle of organizations, products, programs, and complex projects
       from startups and boutique creative agencies to global Fortune 500
-      initiatives &amp; community nonprofits. Particularly effective in periods
-      of transition, growth &amp; complexity, bringing structure to
-      cross-functional work while aligning people, mission &amp; impact.
+      initiatives <span class="amp">&amp;</span> community nonprofits. Particularly effective in periods
+      of transition, growth <span class="amp">&amp;</span> complexity, bringing structure to
+      cross-functional work while aligning people, mission <span class="amp">&amp;</span> impact.
     </p>
 
     <p class="capabilities">
-      Operations &amp; Program Leadership ·
-      Cross-functional Teams &amp; Stakeholders ·
-      Organizational Change &amp; Transitions ·
-      Budgets, Forecasting, P&amp;L ·
+      Operations <span class="amp">&amp;</span> Program Leadership ·
+      Cross-functional Teams <span class="amp">&amp;</span> Stakeholders ·
+      Organizational Change <span class="amp">&amp;</span> Transitions ·
+      Budgets, Forecasting, P<span class="amp">&amp;</span>L ·
       Systems, Process, Technology ·
-      Contracts, Vendor &amp; Client Relationships
+      Contracts, Vendor <span class="amp">&amp;</span> Client Relationships
     </p>
 
   </header>
 
+<section class="section">
+  <h2 class="section-title">Recent Experience</h2>
 
-  <section class="section">
-    <h2 class="section-title">Recent Experience</h2>
+  <article class="role">
+    <h3 class="role-title">Fractional COO <span class="amp">&amp;</span> Community Leadership</h3>
+    <p class="organization">Nonprofits <span class="amp">&amp;</span> Small Local Businesses</p>
+    <p class="meta">Eureka Springs, AR / Regional | <strong>Jan 2024–Present</strong></p>
 
-    <article class="role">
-      <h3 class="role-title">Fractional COO &amp; Community Leadership</h3>
-      <p class="organization">Nonprofits &amp; Small Local Businesses</p>
-      <p class="meta">Eureka Springs, AR / Regional | Jan 2024–Present</p>
+    <ul>
+      <li>
+        <strong>Provide fractional operations and project leadership</strong>
+        to small businesses and nonprofits navigating
+        <strong>startup, growth, leadership transition, and organizational change</strong>,
+        building financial and administrative infrastructure, websites and
+        digital systems, hiring processes, workflows, and day-to-day operations.
+      </li>
 
-      <ul>
-        <li>
-          <strong>Provide fractional operations and project leadership</strong>
-          to small businesses and nonprofits navigating
-          <strong>startup, growth, leadership transition, and organizational change</strong>,
-          building financial and administrative infrastructure, websites and
-          digital systems, hiring processes, workflows, and day-to-day operations.
-        </li>
+      <li>
+        <strong>Lead program and event operations from strategy through execution</strong>,
+        including budgets, timelines, contracts, vendors, volunteers, marketing
+        and communications, and day-of production; projects include a three-day
+        multi-venue music festival for <span class="org">Omaha Blues Society</span> and record-setting
+        fundraisers for <span class="org">Main Street Eureka Springs</span> <span class="amp">&amp;</span> <span class="org">The Purple Flower</span>.
+      </li>
 
-        <li>
-          <strong>Lead program and event operations from strategy through execution</strong>,
-          including budgets, timelines, contracts, vendors, volunteers, marketing
-          and communications, and day-of production; projects include a three-day
-          multi-venue music festival for Omaha Blues Society and record-setting
-          fundraisers for Main Street Eureka Springs &amp; The Purple Flower.
-        </li>
-
-        <li>
-          <strong>Develop and produce educational and community programming</strong>
-          including SCORE Arkansas's regional training program.
-        </li>
-      </ul>
-    </article>
-
-
-    <article class="role">
-      <h3 class="role-title">
-        Leadership Transition Consultant &amp; Chief of Staff
-      </h3>
-      <p class="organization">FÖDA &amp; Bright Lion</p>
-      <p class="meta">Austin, TX / Portland, OR | Oct 2019–Sep 2022</p>
-
-      <ul>
-        <li>
-          Partnered with CEOs &amp; leadership teams to establish ownership,
-          organizational &amp; leadership transition plans.
-        </li>
-        <li>
-          Ran day-to-day operations through the onset of the pandemic as
-          projects halted and client relationships became uncertain,
-          maintaining business continuity while supporting raises for the
-          full staff.
-        </li>
-        <li>
-          Recovered 25% of revenue tied up in aging receivables and reduced
-          payables from 120+ days to under 30.
-        </li>
-        <li>
-          Introduced people-development and personnel practices, led the
-          transition to remote work, and established employee health &amp;
-          wellness benefits.
-        </li>
-      </ul>
-    </article>
+      <li>
+        <strong>Develop and produce educational and community programming</strong>
+        including <span class="org">SCORE Arkansas</span>'s regional training program.
+      </li>
+    </ul>
+  </article>
 
 
-    <article class="role">
-      <h3 class="role-title">Digital Producer, Global</h3>
-      <p class="organization">Blue in Green Digital</p>
-      <p class="meta">Portland, OR / Remote | Jul 2017–Sep 2019</p>
+  <article class="role">
+    <h3 class="role-title">
+      Leadership Transition Consultant <span class="amp">&amp;</span> Chief of Staff
+    </h3>
+    <p class="organization">FÖDA <span class="amp">&amp;</span> Bright Lion</p>
+    <p class="meta">Austin, TX / Portland, OR | <strong>Oct 2019–Sep 2022</strong></p>
 
-      <ul>
-        <li>
-          Created and managed global product processes for a $1.5B corporate
-          client, coordinating internal education, communications &amp; support
-          across legal, marketing, IT &amp; customer support.
-        </li>
-        <li>
-          Led localization of a field-sales web application across 25
-          languages and 60 countries, coordinating more than 100 internal
-          stakeholders while meeting local &amp; international requirements.
-        </li>
-        <li>
-          Managed agile design, development &amp; release cycles with no
-          unplanned downtime; led analytics/reporting strategy, business
-          cases, roadmapping, prioritization, stakeholder alignment &amp;
-          executive presentations.
-        </li>
-      </ul>
-    </article>
-
-
-    <article class="role">
-      <h3 class="role-title">Co-Founder, CFO &amp; COO</h3>
-      <p class="organization">Workfrom</p>
-      <p class="meta">Portland, OR | Feb 2014–Oct 2017</p>
-
-      <ul>
-        <li>
-          Scaled coverage to 35+ cities in 5 countries within 6 months &amp;
-          375 cities across 60+ countries in our 2nd year through ambassador
-          programs, grassroots community building &amp; local events.
-        </li>
-        <li>
-          Built an engineering team pre-revenue through an “Equity for Effort”
-          program &amp; mentoring interns from code schools.
-        </li>
-        <li>
-          Launched at TechCrunch &amp; featured as an Apple Top Pick; 40k
-          downloads in the 1st week grew to 52k MAU.
-        </li>
-        <li>
-          Led acquisition &amp; investment fundraising due diligence &amp;
-          served as a company spokesperson with national &amp; local media.
-        </li>
-      </ul>
-    </article>
-  </section>
+    <ul>
+      <li>
+        <strong>Partnered with CEOs</strong> <span class="amp">&amp;</span> leadership teams to establish ownership,
+        organizational <span class="amp">&amp;</span> leadership transition plans.
+      </li>
+      <li>
+        <strong>Ran day-to-day operations</strong> through the onset of the pandemic as
+        projects halted and client relationships became uncertain,
+        maintaining business continuity while supporting raises for the
+        full staff.
+      </li>
+      <li>
+        <strong>Recovered 25%</strong> of revenue tied up in aging receivables and <strong>reduced
+        payables</strong> from 120+ days to under 30.
+      </li>
+      <li>
+        Introduced people-development and personnel practices, led the
+        transition to remote work, and established
+        <strong>employee health <span class="amp">&amp;</span> wellness benefits.</strong>
+      </li>
+    </ul>
+  </article>
 
 
-  <section class="section">
-    <h2 class="section-title">
-      Earlier Leadership, Operational &amp; Product Experience
-    </h2>
+  <article class="role">
+    <h3 class="role-title">Digital Producer, Global</h3>
+    <p class="organization">Blue in Green Digital</p>
+    <p class="meta">Portland, OR / Remote | <strong>Jul 2017–Sep 2019</strong></p>
 
-    <article class="role">
-      <h3 class="role-title">
-        Director, Technology Practice · Technical Architect &amp; Product Manager
-      </h3>
-      <p class="organization">PartnerPath (formerly Amazon Consulting)</p>
-      <p class="meta">Mountain View, CA | 2003–2009</p>
-
-      <ul>
-        <li>
-          Established a new technology practice automating partner recruitment,
-          engagement, support &amp; management for high-tech enterprises,
-          scaling to 15 FTEs in its first year.
-        </li>
-        <li>
-          Led $1M sales &amp; delivery, grew booked sales 50% YOY, and
-          increased repeat-revenue from 50% to 75%.
-        </li>
-        <li>
-          Led discovery &amp; strategy workshops with Fortune 500 clients,
-          architecting enterprise solutions &amp; integrations; one
-          implementation processed $50M in sales while eliminating 2.5 FTE
-          its first year.
-        </li>
-      </ul>
-    </article>
+    <ul>
+      <li>
+        Created and managed <strong>global product processes for a $1.5B corporate
+        client</strong>, coordinating internal education, communications <span class="amp">&amp;</span> support
+        across legal, marketing, IT <span class="amp">&amp;</span> customer support.
+      </li>
+      <li>
+        Led localization of a field-sales web application across <strong>25
+        languages and 60 countries</strong>, coordinating more than 100 internal
+        stakeholders while meeting local <span class="amp">&amp;</span> international requirements.
+      </li>
+      <li>
+        Managed agile design, development <span class="amp">&amp;</span> release cycles with no
+        unplanned downtime; led <strong>analytics/reporting
+        strategy</strong>, business cases, roadmapping, prioritization, stakeholder alignment <span class="amp">&amp;</span>
+        executive presentations.
+      </li>
+    </ul>
+  </article>
 
 
-    <article class="role">
-      <h3 class="role-title">Director, Projects — Substance</h3>
-      <p class="meta">Portland, OR | 2011–2012</p>
+  <article class="role">
+    <h3 class="role-title">Co-Founder, CFO <span class="amp">&amp;</span> COO</h3>
+    <p class="organization">Workfrom</p>
+    <p class="meta">Portland, OR | <strong>Feb 2014–Oct 2017</strong></p>
 
-      <ul>
-        <li>
-          Established revenue goals with founders &amp; brought the agency to
-          profitability while leading creative &amp; technical teams delivering
-          award-winning digital experiences.
-        </li>
-        <li>
-          Developed teams &amp; introduced collaborative development, QA,
-          release &amp; communication processes that reduced project time
-          &amp; cost without sacrificing creative vision.
-        </li>
-      </ul>
-    </article>
-
-
-    <article class="role">
-      <h3 class="role-title">Product &amp; Project Manager — Temboo</h3>
-      <p class="meta">New York, NY / Remote | 2012–2014</p>
-
-      <ul>
-        <li>
-          Led operational &amp; engineering projects through organizational
-          restructuring &amp; a major product transition from desktop software
-          to a complex cloud-based service.
-        </li>
-        <li>
-          Established sustainable processes, feedback loops, communication
-          channels, product roadmaps, &amp; engineering schedules across the
-          organization.
-        </li>
-      </ul>
-    </article>
-  </section>
+    <ul>
+      <li>
+        Scaled coverage to 35+ cities in 5 countries within 6 months <span class="amp">&amp;</span>
+        375 cities across 60+ countries in our 2nd year through
+        <strong>ambassador programs, grassroots community building</strong> <span class="amp">&amp;</span> local events.
+      </li>
+      <li>
+        Built an engineering team pre-revenue through an <strong>“Equity for Effort”</strong>
+        program <span class="amp">&amp;</span> mentoring interns from code schools.
+      </li>
+      <li>
+        <strong>Launched at TechCrunch</strong> <span class="amp">&amp;</span> featured as an Apple Top Pick; 40k
+        downloads in the 1st week grew to 52k MAU.
+      </li>
+      <li>
+        Led <strong>acquisition <span class="amp">&amp;</span> investment fundraising due diligence</strong> <span class="amp">&amp;</span>
+        served as a company spokesperson with national <span class="amp">&amp;</span> local media.
+      </li>
+    </ul>
+  </article>
+</section>
 
 
-  <section class="section">
-    <h2 class="section-title">Additional Experience</h2>
+<section class="section">
+  <h2 class="section-title">
+    Earlier Leadership, Operational <span class="amp">&amp;</span> Product Experience
+  </h2>
 
-    <p class="additional">
-      Metal Toad Media / ThinkShout—Project Manager &amp; Digital Strategist;
-      Beemix / Mari Impress—Digital Strategist &amp; Designer;
-      Tarot.com—Product Manager, DBA &amp; Engineer;
-      University of Nebraska Information Services—Designer;
-      <em>Daily Nebraskan</em>—Online Editor.
+  <article class="role">
+    <h3 class="role-title">
+      Director, Technology Practice · Product Architect <span class="amp">&amp;</span> Manager
+    </h3>
+    <p class="organization">PartnerPath (formerly Amazon Consulting)</p>
+    <p class="meta">Mountain View, CA | 2003–2009</p>
+
+    <ul>
+      <li>
+        Established a <strong>new technology practice</strong> automating partner recruitment,
+        engagement, support <span class="amp">&amp;</span> management for high-tech enterprises,
+        scaling to 15 FTEs in its first year.
+      </li>
+      <li>
+        Led <strong>$1M sales <span class="amp">&amp;</span> delivery</strong>, grew booked sales <strong>50% YOY</strong>, and
+        increased repeat-revenue from 50% to 75%.
+      </li>
+      <li>
+        Led <strong>discovery <span class="amp">&amp;</span> strategy workshops</strong> with Fortune 500 clients,
+        <strong>architecting enterprise solutions</strong> <span class="amp">&amp;</span> integrations; one
+        implementation processed <strong>$50M in sales</strong> while eliminating 2.5 FTE
+        its first year.
+      </li>
+    </ul>
+  </article>
+
+
+  <article class="role">
+    <h3 class="role-title">Director, Projects — Substance</h3>
+    <p class="meta">Portland, OR · 2011–2012</p>
+
+    <ul>
+      <li>
+        Established revenue goals with founders <span class="amp">&amp;</span> <strong>brought the agency to
+        profitability</strong> while leading creative <span class="amp">&amp;</span> technical teams delivering
+        award-winning digital experiences.
+      </li>
+      <li>
+        Developed teams <span class="amp">&amp;</span> introduced collaborative development, QA,
+        release <span class="amp">&amp;</span> communication processes that
+        <strong>reduced project time <span class="amp">&amp;</span> cost without sacrificing creative vision.</strong>
+      </li>
+    </ul>
+  </article>
+
+
+  <article class="role">
+    <h3 class="role-title">Product <span class="amp">&amp;</span> Project Manager — Temboo</h3>
+    <p class="meta">New York, NY / Remote · 2012–2014</p>
+
+    <ul>
+      <li>
+        Led <strong>operational <span class="amp">&amp;</span> engineering projects through organizational restructuring</strong>
+        <span class="amp">&amp;</span> a major product transition from desktop software
+        to a complex cloud-based service.
+      </li>
+      <li>
+        Established <strong>sustainable processes</strong>, feedback loops, communication
+        channels, product roadmaps, <span class="amp">&amp;</span> engineering schedules across the
+        organization.
+      </li>
+    </ul>
+  </article>
+</section>
+
+
+<section class="section">
+  <h2 class="section-title">Additional Experience</h2>
+
+  <p class="additional">
+    <strong>Roles:</strong> Metal Toad Media / ThinkShout—Project Manager <span class="amp">&amp;</span> Digital Strategist;
+    Beemix / Mari Impress—Digital Strategist <span class="amp">&amp;</span> Designer;
+    Tarot.com—Product Manager, DBA <span class="amp">&amp;</span> Engineer;
+    University of Nebraska Information Services—Designer;
+    <em>Daily Nebraskan</em>—Online Editor.
+  </p>
+  <br>
+  <p class="additional">
+    <strong>Selected Projects:</strong> Led workflow design, project management, global content management <span class="amp">&amp;</span> implementation strategy for Sony Pictures (60+ international sites), Nike, HP, Palm, VeriSign, Young Living <span class="amp">&amp;</span> Travel Oregon.
+</p>
+
+<!--     Tarot.com&mdash;interactive online experience &middot;
+    Sony Pictures, GRAMMYs&mdash;global website &middot; 
+    Travel Oregon&mdash;tourism marketing website &middot;
+    Nike&mdash;internal field-sales application &middot;
+    HP, Palm, VeriSign&mdash;global partner enablement application &middot;
+    Young Living&mdash; global field-sales application
+ -->  
+
+</section>
+
+<!-- <section class="section">
+  <h2 class="section-title"></h2>
+
+  <p class="additional">
+    Sony Pictures · HP · Palm · VeriSign · Symantec · Young Living · The Recording Academy / GRAMMYs · Nike
+  </p>
+</section>
+ -->
+
+<section class="section">
+  <h2 class="section-title">Education <span class="amp">&amp;</span> Professional Development</h2>
+
+  <div class="education">
+    <p>
+      <strong>Leadership <span class="amp">&amp;</span> Coaching:</strong>
+      Strozzi Institute (Embodied Transformation <span class="amp">&amp;</span> Somatic Coach Training),
+      Forge, School of Somatic Intuitive Healing (Certification),
+      International Coaching Federation
     </p>
-  </section>
 
+    <p>
+      <strong>Project <span class="amp">&amp;</span> Product Mgmt:</strong>
+      Project Management Institute, Pragmatic Institute
+    </p>
 
-  <section class="section">
-    <h2 class="section-title">Education &amp; Professional Development</h2>
+    <p>
+      <strong>Entrepreneurship <span class="amp">&amp;</span> Incubators:</strong>
+      Women’s Startup Lab, Jaguar Land Rover Incubator
+    </p>
 
-    <div class="education">
-      <p>
-        <strong>Leadership &amp; Coaching:</strong>
-        Strozzi Institute (Embodied Transformation &amp; Somatic Coach Training),
-        Forge, School of Somatic Intuitive Healing (Certification),
-        International Coaching Federation
-      </p>
-
-      <p>
-        <strong>Project &amp; Product Mgmt:</strong>
-        Project Management Institute, Pragmatic Institute
-      </p>
-
-      <p>
-        <strong>Entrepreneurship &amp; Incubators:</strong>
-        Women’s Startup Lab, Jaguar Land Rover Incubator
-      </p>
-
-      <p>
-        <strong>Undergraduate Studies:</strong>
-        University of Nebraska–Lincoln, Portland State University &amp;
-        Portland Community College—Fine Arts, Computer Science, Math &amp;
-        Management; Regents Scholar &amp; Honors at UNL
-      </p>
-    </div>
-  </section>
+    <p>
+      <strong>Undergraduate Studies:</strong>
+      University of Nebraska–Lincoln, Portland State University <span class="amp">&amp;</span>
+      Portland Community College—Fine Arts, Computer Science, Math <span class="amp">&amp;</span>
+      Management; Regents Scholar <span class="amp">&amp;</span> Honors at UNL
+    </p>
+  </div>
+</section>
 
 
   <p class="download">
